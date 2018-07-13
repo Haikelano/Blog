@@ -18,4 +18,12 @@ export class PostListCompenentComponent implements OnInit {
 getpostLoves(){
     return this.getpostLoves();
 }
+  onClickplus() {
+    this.postLoves = this.postLoves + 1;
+   return this.postLoves;
+  }
+  onClickmoins() {
+    this.postLoves = this.postLoves - 1;
+     return this.postLoves ;
+  }
 }

@@ -10,6 +10,8 @@
   </div>
 </div>
   <p> {{ postContent}}</p>
-<button class="btn btn-success">Loves it :</button>
-<button class="btn btn-danger" style="margin-left: 30px">Don't love it !</button>
+<button class="btn btn-success" (click)= "onClickplus()">Loves it :</button>
+<button class="btn btn-danger" (click)= "onClickmoins()" style="margin-left: 30px">Don't love it !</button>
+ <button class="btn-primary" style="margin-left: 30px" ><i class="fa fa-thumbs-up"></i> Like</button>  {{ postLoves}}
+
 </li>

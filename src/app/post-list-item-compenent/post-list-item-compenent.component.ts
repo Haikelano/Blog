@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {post} from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-post-list-item-compenent',
