@@ -6,12 +6,12 @@
 <h2> {{ postTitle}}  </h2>
 </div>
   <div class="col-md-3">
-    {{ postCreated | date: 'y / MMMM / d / EEEE '}}
+    {{ postCreated | date: 'd/MM/y , HH:mm a '}}
   </div>
 </div>
   <p> {{ postContent}}</p>
-<button class="btn btn-success" (click)= "onClickplus()">Loves it :</button>
-<button class="btn btn-danger" (click)= "onClickmoins()" style="margin-left: 30px">Don't love it !</button>
- <button class="btn-primary" style="margin-left: 30px" ><i class="fa fa-thumbs-up"></i> Like</button>  {{ postLoves}}
 
+  <button class="btn btn-success" (click)= "onClickplus()">Loves it :</button>
+  <button class="btn btn-danger" (click)= "onClickmoins()" style="margin-left: 30px">Don't love it !</button>
+  <button class="btn-primary" style="margin-left: 30px" ><i class="fa fa-thumbs-up"></i> Like</button>  {{ postLoves}}
 </li>

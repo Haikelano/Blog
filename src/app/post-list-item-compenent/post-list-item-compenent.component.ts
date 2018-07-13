@@ -7,7 +7,7 @@ import {post} from 'selenium-webdriver/http';
   styleUrls: ['./post-list-item-compenent.component.scss']
 })
 export class PostListItemCompenentComponent implements OnInit {
-
+  @Input() postLoves: number;
   constructor() { }
 
   ngOnInit() {
